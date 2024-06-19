@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/favicn.png" type="image/x-icon">
+    <!-- Css ⬇️ -->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/globals.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Css ⬆️ -->
+    <title> Currency Converter With API </title>
+</head>
+
+<body>
+    <h1> Currency Converter </h1>
+    <main class="currency_converter">
+        <input type="number" class="amount" placeholder="Amount">
+        <hr>
+        <section class="inputs-wrapper">
+            <div>
+                <label>From</label>
+                <select class="from">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="EGP">EGP</option>
+                    <option value="SEK">SEK</option>
+                    <option value="KWD">KWD</option>
+                    <option value="GBP">GBP</option>
+                </select>
+            </div>
+            <div>
+                <label>To</label>
+                <select class="to">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="EGP">EGP</option>
+                    <option value="SEK">SEK</option>
+                    <option value="KWD">KWD</option>
+                    <option value="GBP">GBP</option>
+                </select>
+            </div>
+            <button id="convert" onclick="convertCurrency()">Convert</button>
+        </section>
+
+        <div class="result-wrapper hidden ">
+            <h3 class="result-heading">Result</h3>
+            <hr>
+            <div class="result">
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
